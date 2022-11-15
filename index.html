@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <html>
+        <head>
+          <title> Imersão Dev Alura - Aula 01</title>
+        </head>
+        <body>
+          <div class="container">
+            <h1 class="page-title">
+            School approval</h1>
+            <p class="page-subtitle">
+            Find out your average grade for all tests!
+            </p>
+            <img src="https://i.pinimg.com/originals/f1/c4/fa/f1c4fab76c4d43d3590c320699905ce0.png" alt="">
+          </div>
+          <a href="https://alura.com.br/" target="_blank">
+          <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+          </a>
+          
+          <h2 class="calculate"> Calculate the average:<h2>
+          
+          <input type="Number" id="n1">
+          <input type="Number" id="n2">
+          <input type="Number" id="n3">
+          <input type="Number" id="n4">
+          
+                <button onClick="calcular()">Calculate</button>
+            
+            <script> 
+            function calcular() { 
+              var n1= document.getElementById("n1").value
+              var n2= document.getElementById("n2").value
+              var n3= document.getElementById("n3").value
+              var n4= document.getElementById("n4").value
+              
+              var media = (Number(n1) + Number(n2) + Number(n3) + Number(n4) ) / 4
+              alert(`The average of the values is: ${media}`)
+           
+            }
+            </script>
+            
+          
+          
+          
+          
+          
+        </body>
+      </html>
